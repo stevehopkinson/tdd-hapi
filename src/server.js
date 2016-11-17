@@ -8,7 +8,7 @@ server.connection({ port: 3000 });
 server.route({
   path: '/',
   method: 'GET',
-  handler: (req, res) => res('Hello, world!')
+  handler: (request, reply) => reply('Hello, world!')
 })
 
 module.exports = server;

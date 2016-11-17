@@ -1,13 +1,13 @@
 {
   "name": "tdd-hapi-workshop",
   "version": "1.0.0",
-  "description": "",
-  "main": "src/server.js",
+  "description": "Workshop to build a Hapi server using TDD",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src/server.js"
+    "start": "nodemon src/index.js"
   },
-  "author": "",
+  "author": "Steve Hopkinson",
   "license": "ISC",
   "devDependencies": {
     "tape": "^4.6.2"

@@ -1,6 +1,8 @@
 const server = require('../src/server');
 const tape = require('tape');
 
-tape('Is the server running?', (t) => {
-  
+tape('Does the server start?', (t) => {
+  server.start(err => {
+    t.error(err);
+  });
 })

@@ -2,10 +2,10 @@
 
 const Hapi = require('hapi');
 
-const server - new Hapi.Server();
-server.connection({ post: 3000 });
+const server = new Hapi.Server();
+server.connection({ port: 3000 });
 
-server.start( err =>
+server.start( err => {
   if (err) throw err;
   console.log(`Server running at: ${server.info.uri}`);
-)
+});
